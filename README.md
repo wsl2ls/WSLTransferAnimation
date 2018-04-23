@@ -4,7 +4,7 @@
 
 >本文只是记录分享下自定义转场动画的实现方法，具体到动画效果的代码可以到Github下载查看，注释还算清晰。
 
-###模态化present和dismiss 自定义转场
+### 模态化present和dismiss 自定义转场
 
 
 1、创建一个遵循<UIViewControllerAnimatedTransitioning>协议的动画过渡管理对象(第一步需要返回的)，并实现如下两个方法：
