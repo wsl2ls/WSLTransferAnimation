@@ -45,11 +45,6 @@
 
 #pragma mark -- Events Handel
 
-- (void)tapClicked{
-    
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 #pragma mark -- Getter
 
 - (UIImageView *)imageView{
@@ -58,9 +53,6 @@
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/2)];
         _imageView.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
         _imageView.image = [UIImage imageNamed:@"piao"];
-        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClicked)];
-        _imageView.userInteractionEnabled = YES;
-        [_imageView addGestureRecognizer:tap];
         
     }
     return _imageView;
