@@ -78,7 +78,7 @@ self.transitioningDelegate = self;
 }
 ```
 
-###导航控制器push和pop 自定义转场
+### 导航控制器push和pop 自定义转场
 
 1、同上
 2、同上
@@ -117,7 +117,7 @@ self.transitioningDelegate = self;
 
 ```
 
-###全屏侧滑返回
+### 全屏侧滑返回
 
 > 创建一个继承于UINavigationController的一个对象WSLNavigatioController，遵守协议<UIGestureRecognizerDelegate>,实现如下方法：
 
@@ -166,5 +166,5 @@ self.transitioningDelegate = self;
 ```
 
 学习文章：
-https://www.jianshu.com/p/45434f73019e
+https://www.jianshu.com/p/45434f73019e     
 http://www.cocoachina.com/ios/20150811/12897.html
