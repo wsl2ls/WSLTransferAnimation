@@ -113,7 +113,7 @@
     return nil;
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
+- (void)viewDidDisappear:(BOOL)animated{
     self.navigationController.delegate = nil;
 }
 
