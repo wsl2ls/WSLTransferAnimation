@@ -112,6 +112,7 @@
         self.navigationController.delegate = animationFour;
         [self.navigationController pushViewController:animationFour animated:YES];
     }else if (_vcArray[indexPath.row] == [WSLAnimationFive class]){
+        self.navigationController.delegate = nil;
         WSLAnimationFive * animationFive = [[_vcArray[indexPath.row] alloc] init];
         [self.navigationController pushViewController:animationFive animated:YES];
     }

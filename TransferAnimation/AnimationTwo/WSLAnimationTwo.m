@@ -124,8 +124,8 @@
     return nil;
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
-  self.navigationController.delegate = nil;
+- (void)viewDidDisappear:(BOOL)animated{
+    self.navigationController.delegate = nil;
 }
 
 

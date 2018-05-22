@@ -41,8 +41,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-    self.navigationController.delegate = nil;
+- (void)viewWillAppear:(BOOL)animated{
+     self.navigationController.delegate = nil;
 }
 
 
