@@ -87,6 +87,7 @@
     cell.imageView.image = [UIImage imageNamed:@"piao"];
     cell.textLabel.text = _dataSource[indexPath.row];
     cell.detailTextLabel.text = _describeArray[indexPath.row];
+    cell.detailTextLabel.numberOfLines = 2;
     return cell;
 }
 
