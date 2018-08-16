@@ -28,9 +28,25 @@
     scrollView.pagingEnabled = YES;
     scrollView.bounces = NO;
     for (int i = 0; i < 2 ; i++) {
+        
         UIView * view = [[UIView alloc] initWithFrame:CGRectMake(i * SCREEN_WIDTH, 0, SCREEN_WIDTH, scrollView.frame.size.height)];
-        view.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];
+        view.backgroundColor = RGBRANDOMCOLOR;
         [scrollView addSubview:view];
+        
+        //滑块视图
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 60, 100)];
+        label.center = CGPointMake(SCREEN_WIDTH/2.0, view.frame.size.height/2.0 - 100);
+        label.text = i == 0 ? @"全屏侧滑返回、UISlider、UIScrollView相互间的手势冲突" : @"UISlider和UIScrollView的滑动事件冲突";
+        label.textColor = RGBRANDOMCOLOR;
+        label.numberOfLines = 2;
+        label.backgroundColor = [UIColor whiteColor];
+        [view addSubview:label];
+        
+        UISlider * slider = [[UISlider alloc] initWithFrame:CGRectMake(20, label.frame.origin.y + 200, SCREEN_WIDTH - 40, 50)];
+        slider.minimumTrackTintColor = RGBRANDOMCOLOR;
+        slider.maximumTrackTintColor = RGBRANDOMCOLOR;
+        [view addSubview:slider];
+        
     }
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 2, scrollView.frame.size.height);
     [self.view addSubview:scrollView];

@@ -33,7 +33,7 @@
     [self.view addSubview:self.tableView];
     self.title = @"转场动画";
     _dataSource = @[@"Present/Dissmiss转场1", @"Push/Pop转场2", @"Present/Dissmiss转场3", @"Push/Pop转场4",@"Push/Pop转场5"];
-    _describeArray = @[@"新浪微博图集浏览转场效果", @"手势过渡动画", @"网易音乐启动屏转场动画", @"开关门动画", @"全屏侧滑返回"];
+    _describeArray = @[@"新浪微博图集浏览转场效果", @"手势过渡动画", @"网易音乐启动屏转场动画", @"开关门动画", @"全屏侧滑返回、UIScrollView、UISlider三者手势滑动事件冲突"];
     _vcArray = @[[WSLAnimationOne class], [WSLAnimationTwo class], [WSLAnimationThree class], [WSLAnimationFour class], [WSLAnimationFive class]];
 }
 
