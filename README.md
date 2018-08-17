@@ -170,10 +170,10 @@ https://www.jianshu.com/p/45434f73019e    
 http://www.cocoachina.com/ios/20150811/12897.html
 
 
+
+
+
 > 更新于 2018/8/17   [iOS 全屏侧滑手势/UIScrollView/UISlider间滑动手势冲突](https://www.jianshu.com/p/a9a322052f26)
-
-
-![七夕节福利🌹](https://upload-images.jianshu.io/upload_images/1708447-3ef7a155b61b3616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![效果预览](https://upload-images.jianshu.io/upload_images/1708447-83ae3654030d8414.gif?imageMogr2/auto-orient/strip)
 
